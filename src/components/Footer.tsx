@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Button } from './ui/button';
-import { Phone, Email, MapPin, Facebook, Users, MessageSquare } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Users, MessageSquare } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const { t, isRTL } = useLanguage();
@@ -82,7 +81,7 @@ const Footer: React.FC = () => {
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <Email className="w-5 h-5 text-nour-yellow flex-shrink-0" />
+                <Mail className="w-5 h-5 text-nour-yellow flex-shrink-0" />
                 <span className={`text-gray-300 ${isRTL ? 'font-cairo' : 'font-inter'}`}>
                   info@nourtrading.com
                 </span>

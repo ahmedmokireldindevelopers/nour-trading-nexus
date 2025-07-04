@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Card, CardContent } from './ui/card';
@@ -7,7 +6,7 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Textarea } from './ui/textarea';
 import { useToast } from '../hooks/use-toast';
-import { Phone, Email, MapPin, MessageSquare, Facebook, Users } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageSquare, Facebook, Users } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
   const { t, isRTL } = useLanguage();
@@ -52,7 +51,7 @@ const ContactSection: React.FC = () => {
       action: () => window.open('tel:+97412345678')
     },
     {
-      icon: <Email className="w-6 h-6 text-nour-yellow" />,
+      icon: <Mail className="w-6 h-6 text-nour-yellow" />,
       title: t('contact.info.email'),
       content: 'info@nourtrading.com',
       action: () => window.open('mailto:info@nourtrading.com')

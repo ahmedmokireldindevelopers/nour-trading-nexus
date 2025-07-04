@@ -3,7 +3,7 @@ import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
-import { ShoppingBag, Briefcase, Delivery, Search } from 'lucide-react';
+import { ShoppingBag, Briefcase, Truck, Search } from 'lucide-react';
 
 const ServicesSection: React.FC = () => {
   const { t, isRTL } = useLanguage();
@@ -22,7 +22,7 @@ const ServicesSection: React.FC = () => {
       color: 'from-green-50 to-green-100'
     },
     {
-      icon: <Delivery className="w-10 h-10 text-nour-yellow" />,
+      icon: <Truck className="w-10 h-10 text-nour-yellow" />,
       title: t('services.delivery.title'),
       description: t('services.delivery.desc'),
       color: 'from-purple-50 to-purple-100'

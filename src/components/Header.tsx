@@ -44,18 +44,12 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-nour-blue to-nour-light-blue rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">N</span>
-            </div>
-            <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
-              <span className={`font-bold text-lg ${isScrolled ? 'text-nour-blue' : 'text-white'}`}>
-                Nour Trading
-              </span>
-              <span className={`text-sm ${isScrolled ? 'text-nour-gray' : 'text-gray-200'}`}>
-                & Supplies
-              </span>
-            </div>
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/645fdf84-a4be-41f8-be0e-f331e1250923.png" 
+              alt="Nour Trading & Supplies Logo" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}

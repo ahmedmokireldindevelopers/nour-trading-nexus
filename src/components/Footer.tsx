@@ -56,14 +56,12 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="space-y-6">
             {/* Logo */}
-            <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-nour-yellow to-yellow-300 rounded-xl flex items-center justify-center">
-                <span className="text-nour-dark-gray font-bold text-xl">N</span>
-              </div>
-              <div className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'}`}>
-                <span className="font-bold text-xl text-white">Nour Trading</span>
-                <span className="text-gray-300">& Supplies</span>
-              </div>
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/645fdf84-a4be-41f8-be0e-f331e1250923.png" 
+                alt="Nour Trading & Supplies Logo" 
+                className="h-16 w-auto"
+              />
             </div>
             
             <p className={`text-gray-300 leading-relaxed ${

@@ -46,7 +46,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/645fdf84-a4be-41f8-be0e-f331e1250923.png" 
+              src="/lovable-uploads/3d4036e1-2fe0-469f-95cc-372f1736cad6.png" 
               alt="Nour Trading & Supplies Logo" 
               className="h-12 w-auto"
             />

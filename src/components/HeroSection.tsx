@@ -29,8 +29,12 @@ const HeroSection: React.FC = () => {
         <div className="max-w-4xl mx-auto animate-fade-in">
           {/* Logo Icon */}
           <div className="mb-8">
-            <div className="w-20 h-20 bg-gradient-to-br from-nour-yellow to-yellow-300 rounded-2xl flex items-center justify-center mx-auto shadow-2xl">
-              <span className="text-nour-dark-gray font-bold text-3xl">N</span>
+            <div className="w-24 h-24 bg-white/10 backdrop-blur-sm rounded-2xl flex items-center justify-center mx-auto shadow-2xl border border-white/20">
+              <img 
+                src="/lovable-uploads/a658bd6c-9130-4495-b04a-0d512ed3d486.png" 
+                alt="Nour Trading Logo" 
+                className="w-16 h-16 object-contain"
+              />
             </div>
           </div>
           

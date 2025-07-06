@@ -46,7 +46,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/3d4036e1-2fe0-469f-95cc-372f1736cad6.png" 
+              src={isScrolled ? "/lovable-uploads/700f8b0e-cccd-4bfb-b793-6eec97a3bbec.png" : "/lovable-uploads/a658bd6c-9130-4495-b04a-0d512ed3d486.png"}
               alt="Nour Trading & Supplies Logo" 
               className="h-12 w-auto"
             />

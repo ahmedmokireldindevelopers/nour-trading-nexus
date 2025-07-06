@@ -12,17 +12,21 @@ import {
 } from './ui/carousel';
 import { CheckCircle, Zap, Shield, Award } from 'lucide-react';
 import Autoplay from "embla-carousel-autoplay";
+import { Link } from 'react-router-dom';
 
 // Import product images
-import pvcConduit1 from '../assets/pvc-conduit-1.jpg';
-import pvcConduit2 from '../assets/pvc-conduit-2.jpg';
-import pvcConduit3 from '../assets/pvc-conduit-3.jpg';
-import flexibleConduit1 from '../assets/flexible-conduit-1.jpg';
-import flexibleConduit2 from '../assets/flexible-conduit-2.jpg';
-import flexibleConduit3 from '../assets/flexible-conduit-3.jpg';
 import pexPipe1 from '../assets/pex-pipe-1.jpg';
 import pexPipe2 from '../assets/pex-pipe-2.jpg';
 import pexPipe3 from '../assets/pex-pipe-3.jpg';
+import electricalWires1 from '../assets/electrical-wires-1.jpg';
+import electricalWires2 from '../assets/electrical-wires-2.jpg';
+import electricalWires3 from '../assets/electrical-wires-3.jpg';
+import dibondInstallation1 from '../assets/dibond-installation-1.jpg';
+import dibondInstallation2 from '../assets/dibond-installation-2.jpg';
+import dibondInstallation3 from '../assets/dibond-installation-3.jpg';
+import accessories1 from '../assets/accessories-1.jpg';
+import accessories2 from '../assets/accessories-2.jpg';
+import accessories3 from '../assets/accessories-3.jpg';
 import customerInstall1 from '../assets/customer-install-1.jpg';
 import customer2 from '../assets/customer-2.jpg';
 import customer3 from '../assets/customer-3.jpg';
@@ -32,42 +36,8 @@ const ProductsSection: React.FC = () => {
 
   const products = [
     {
-      id: 'pvc-conduit',
-      name: isRTL ? 'مواسير PVC الكهربائية' : 'Electrical PVC Conduit',
-      description: isRTL ? 'مواسير PVC عالية الجودة للتمديدات الكهربائية' : 'High-quality PVC conduits for electrical installations',
-      images: [pvcConduit1, pvcConduit2, pvcConduit3],
-      specifications: [
-        { label: isRTL ? 'الأحجام' : 'Sizes', value: isRTL ? '16مم - 110مم' : '16mm - 110mm' },
-        { label: isRTL ? 'المعيار' : 'Standard', value: 'BS EN 61386' },
-        { label: isRTL ? 'المقاومة' : 'Impact Resistance', value: isRTL ? 'عالية' : 'High' },
-        { label: isRTL ? 'درجة الحرارة' : 'Temperature Range', value: '-25°C to +60°C' }
-      ],
-      features: [
-        isRTL ? 'مقاوم للتآكل' : 'Corrosion resistant',
-        isRTL ? 'سهل التركيب' : 'Easy installation',
-        isRTL ? 'متوافق مع المعايير الدولية' : 'International standards compliant'
-      ]
-    },
-    {
-      id: 'flexible-conduit',
-      name: isRTL ? 'مواسير PVC المرنة' : 'Flexible PVC Electrical Conduit',
-      description: isRTL ? 'مواسير مرنة للتطبيقات الكهربائية المعقدة' : 'Flexible conduits for complex electrical applications',
-      images: [flexibleConduit1, flexibleConduit2, flexibleConduit3],
-      specifications: [
-        { label: isRTL ? 'الأحجام' : 'Sizes', value: isRTL ? '10مم - 50مم' : '10mm - 50mm' },
-        { label: isRTL ? 'المرونة' : 'Flexibility', value: isRTL ? 'عالية' : 'High' },
-        { label: isRTL ? 'مقاومة الضغط' : 'Crush Resistance', value: isRTL ? 'ممتازة' : 'Excellent' },
-        { label: isRTL ? 'اللون' : 'Color', value: isRTL ? 'أسود/رمادي' : 'Black/Gray' }
-      ],
-      features: [
-        isRTL ? 'مرونة فائقة' : 'Superior flexibility',
-        isRTL ? 'حماية ممتازة للكابلات' : 'Excellent cable protection',
-        isRTL ? 'مناسب للمساحات الضيقة' : 'Ideal for tight spaces'
-      ]
-    },
-    {
-      id: 'pex-pipe',
-      name: isRTL ? 'أنابيب PEX الحمراء' : 'PEX Pipe / Red PEX Tubing',
+      id: 'pex-pipes',
+      name: isRTL ? 'أنابيب PEX' : 'PEX Pipes',
       description: isRTL ? 'أنابيب PEX عالية الجودة لأنظمة السباكة' : 'High-quality PEX pipes for plumbing systems',
       images: [pexPipe1, pexPipe2, pexPipe3],
       specifications: [
@@ -81,6 +51,57 @@ const ProductsSection: React.FC = () => {
         isRTL ? 'سهل التركيب' : 'Easy installation',
         isRTL ? 'خالي من الرصاص' : 'Lead-free'
       ]
+    },
+    {
+      id: 'electrical-wires',
+      name: isRTL ? 'الأسلاك الكهربائية' : 'Electrical Wires',
+      description: isRTL ? 'أسلاك كهربائية عالية الجودة للتطبيقات المختلفة' : 'High-quality electrical wires for various applications',
+      images: [electricalWires1, electricalWires2, electricalWires3],
+      specifications: [
+        { label: isRTL ? 'الأحجام' : 'Sizes', value: isRTL ? '1.5مم - 25مم²' : '1.5mm - 25mm²' },
+        { label: isRTL ? 'الجهد' : 'Voltage Rating', value: '450/750V' },
+        { label: isRTL ? 'المعيار' : 'Standard', value: 'IEC 60227' },
+        { label: isRTL ? 'المادة' : 'Material', value: isRTL ? 'نحاس خالص' : 'Pure Copper' }
+      ],
+      features: [
+        isRTL ? 'موصلية عالية' : 'High conductivity',
+        isRTL ? 'مقاوم للحرارة' : 'Heat resistant',
+        isRTL ? 'عازل آمن' : 'Safe insulation'
+      ]
+    },
+    {
+      id: 'dibond-installations',
+      name: isRTL ? 'تركيبات الديبوند' : 'Dibond Installations',
+      description: isRTL ? 'تركيبات ديبوند احترافية للمولات والمحلات والسوبر ماركت' : 'Professional dibond installations for malls, shops, and supermarkets',
+      images: [dibondInstallation1, dibondInstallation2, dibondInstallation3],
+      specifications: [
+        { label: isRTL ? 'السماكة' : 'Thickness', value: isRTL ? '3-6مم' : '3-6mm' },
+        { label: isRTL ? 'المقاس' : 'Size', value: isRTL ? 'حسب الطلب' : 'Custom sizes' },
+        { label: isRTL ? 'المادة' : 'Material', value: isRTL ? 'ألومنيوم مركب' : 'Aluminum Composite' },
+        { label: isRTL ? 'الألوان' : 'Colors', value: isRTL ? 'متعدد الألوان' : 'Multi-color' }
+      ],
+      features: [
+        isRTL ? 'مقاوم للعوامل الجوية' : 'Weather resistant',
+        isRTL ? 'سهل التنظيف' : 'Easy to clean',
+        isRTL ? 'تصميم عصري' : 'Modern design'
+      ]
+    },
+    {
+      id: 'accessories',
+      name: isRTL ? 'الإكسسوارات' : 'Accessories',
+      description: isRTL ? 'إكسسوارات وقطع غيار متنوعة للشركات والعملاء' : 'Various accessories and spare parts for companies and customers',
+      images: [accessories1, accessories2, accessories3],
+      specifications: [
+        { label: isRTL ? 'الأنواع' : 'Types', value: isRTL ? 'متنوعة' : 'Various' },
+        { label: isRTL ? 'الجودة' : 'Quality', value: isRTL ? 'عالية' : 'High' },
+        { label: isRTL ? 'التوافق' : 'Compatibility', value: isRTL ? 'عالمي' : 'Universal' },
+        { label: isRTL ? 'الضمان' : 'Warranty', value: isRTL ? 'سنة واحدة' : '1 Year' }
+      ],
+      features: [
+        isRTL ? 'جودة عالية' : 'Premium quality',
+        isRTL ? 'تنوع كبير' : 'Wide variety',
+        isRTL ? 'أسعار تنافسية' : 'Competitive prices'
+      ]
     }
   ];
 
@@ -88,6 +109,7 @@ const ProductsSection: React.FC = () => {
     ...products[0].images,
     ...products[1].images,
     ...products[2].images,
+    ...products[3].images,
     customerInstall1,
     customer2,
     customer3
@@ -186,7 +208,7 @@ const ProductsSection: React.FC = () => {
         </div>
 
         {/* Product Details */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8 mb-20">
           {products.map((product, index) => (
             <Card 
               key={product.id}
@@ -267,13 +289,24 @@ const ProductsSection: React.FC = () => {
                 </div>
 
                 {/* CTA */}
-                <Button
-                  onClick={scrollToContact}
-                  className="w-full bg-nour-blue hover:bg-nour-light-blue text-white font-semibold py-3"
-                >
-                  <Zap className="w-4 h-4 mr-2" />
-                  {isRTL ? 'طلب عرض سعر' : 'Request Quote'}
-                </Button>
+                <div className="space-y-3">
+                  <Link 
+                    to={`/${product.id.replace('_', '-')}`}
+                    className="block"
+                  >
+                    <Button className="w-full bg-nour-blue hover:bg-nour-light-blue text-white font-semibold py-3">
+                      {isRTL ? 'عرض التفاصيل' : 'View Details'}
+                    </Button>
+                  </Link>
+                  <Button
+                    onClick={scrollToContact}
+                    variant="outline"
+                    className="w-full border-nour-blue text-nour-blue hover:bg-nour-blue hover:text-white"
+                  >
+                    <Zap className="w-4 h-4 mr-2" />
+                    {isRTL ? 'طلب عرض سعر' : 'Request Quote'}
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}

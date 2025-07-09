@@ -77,6 +77,62 @@ const ProjectGallerySection: React.FC = () => {
       location: isRTL ? 'مول تجاري' : 'Commercial Mall',
       date: isRTL ? '2024' : '2024',
       status: isRTL ? 'قيد التنفيذ' : 'In Progress'
+    },
+    {
+      image: '/lovable-uploads/e3d94439-9980-4a05-b4f3-ff54faad7aa5.png',
+      title: isRTL ? 'البنك الزراعي المصري - مرحلة التشطيب' : 'Agricultural Bank of Egypt - Finishing Phase',
+      location: isRTL ? 'فرع بنكي' : 'Bank Branch',
+      date: isRTL ? '2024' : '2024',
+      status: isRTL ? 'قيد التنفيذ' : 'In Progress'
+    },
+    {
+      image: '/lovable-uploads/c3de0598-fb73-4137-bdc5-4fd27e8b180b.png',
+      title: isRTL ? 'البنك الزراعي المصري - الواجهة الرئيسية' : 'Agricultural Bank of Egypt - Main Facade',
+      location: isRTL ? 'فرع بنكي' : 'Bank Branch',
+      date: isRTL ? '2024' : '2024',
+      status: isRTL ? 'مكتمل' : 'Completed'
+    },
+    {
+      image: '/lovable-uploads/6fbe1062-da0f-40b2-b795-a147908535d3.png',
+      title: isRTL ? 'البنك الزراعي المصري - أثناء التركيب' : 'Agricultural Bank of Egypt - During Installation',
+      location: isRTL ? 'فرع بنكي' : 'Bank Branch',
+      date: isRTL ? '2024' : '2024',
+      status: isRTL ? 'قيد التنفيذ' : 'In Progress'
+    },
+    {
+      image: '/lovable-uploads/8c0e00d3-7148-45dd-a84f-5c784e4f15e8.png',
+      title: isRTL ? 'البنك الزراعي المصري - مواد البناء' : 'Agricultural Bank of Egypt - Construction Materials',
+      location: isRTL ? 'فرع بنكي' : 'Bank Branch',
+      date: isRTL ? '2024' : '2024',
+      status: isRTL ? 'قيد التنفيذ' : 'In Progress'
+    },
+    {
+      image: '/lovable-uploads/72303684-3595-4e6e-b7cc-72cbdf26aaaf.png',
+      title: isRTL ? 'متجر توتال - الإضاءة الليلية' : 'Total Store - Night Lighting',
+      location: isRTL ? 'شارع تجاري' : 'Commercial Street',
+      date: isRTL ? '2024' : '2024',
+      status: isRTL ? 'مكتمل' : 'Completed'
+    },
+    {
+      image: '/lovable-uploads/e3c5f1e0-4982-4e88-b5f4-fbe7b7d33b5d.png',
+      title: isRTL ? 'البنك الزراعي المصري - أعمال البناء' : 'Agricultural Bank of Egypt - Construction Work',
+      location: isRTL ? 'فرع بنكي' : 'Bank Branch',
+      date: isRTL ? '2024' : '2024',
+      status: isRTL ? 'قيد التنفيذ' : 'In Progress'
+    },
+    {
+      image: '/lovable-uploads/16130827-f6e5-455f-819d-6073ffe0e192.png',
+      title: isRTL ? 'متجر توتال - واجهة مضيئة' : 'Total Store - Illuminated Facade',
+      location: isRTL ? 'شارع تجاري' : 'Commercial Street',
+      date: isRTL ? '2024' : '2024',
+      status: isRTL ? 'مكتمل' : 'Completed'
+    },
+    {
+      image: '/lovable-uploads/1cac0109-9c89-44f1-935a-2bd66dde9bd6.png',
+      title: isRTL ? 'مبنى تجاري - واجهة خارجية' : 'Commercial Building - External Facade',
+      location: isRTL ? 'منطقة تجارية' : 'Commercial Area',
+      date: isRTL ? '2024' : '2024',
+      status: isRTL ? 'مكتمل' : 'Completed'
     }
   ];
 

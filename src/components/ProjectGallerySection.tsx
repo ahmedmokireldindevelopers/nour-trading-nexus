@@ -155,7 +155,7 @@ const ProjectGallerySection: React.FC = () => {
           </p>
         </div>
 
-        <div className="relative max-w-7xl mx-auto">
+        <div className="relative max-w-full mx-auto">
           <Carousel
             opts={{
               align: "start",
@@ -165,23 +165,23 @@ const ProjectGallerySection: React.FC = () => {
             }}
             className="w-full"
           >
-            <CarouselContent className="-ml-2 md:-ml-4">
+            <CarouselContent className="-ml-1 md:-ml-2">
               {projectImages.map((project, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                <CarouselItem key={index} className="pl-1 md:pl-2 basis-1/2 md:basis-1/3 lg:basis-1/4 xl:basis-1/5">
                   <div className="h-full">
                     <Card className="bg-white hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-1 group overflow-hidden h-full">
                       <div className="relative overflow-hidden">
                         <img
                           src={project.image}
                           alt={project.title}
-                          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                          className="w-full h-56 md:h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                           loading="lazy"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <div className="absolute top-4 right-4">
+                          <div className="absolute top-2 right-2">
                             <Badge 
                               variant={project.status === (isRTL ? 'مكتمل' : 'Completed') ? 'default' : 'secondary'}
-                              className="bg-white/90 text-primary"
+                              className="bg-white/90 text-primary text-xs"
                             >
                               {project.status}
                             </Badge>
@@ -189,23 +189,23 @@ const ProjectGallerySection: React.FC = () => {
                         </div>
                       </div>
                       
-                      <CardContent className="p-4">
-                        <h3 className={`text-lg font-bold text-primary mb-2 line-clamp-2 group-hover:text-primary/80 transition-colors ${
+                      <CardContent className="p-3">
+                        <h3 className={`text-sm font-bold text-primary mb-2 line-clamp-2 group-hover:text-primary/80 transition-colors ${
                           isRTL ? 'font-cairo text-right' : 'font-poppins'
                         }`}>
                           {project.title}
                         </h3>
                         
-                        <div className="space-y-2 text-sm text-muted-foreground">
-                          <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                            <MapPin className="h-4 w-4 text-primary" />
+                        <div className="space-y-1 text-xs text-muted-foreground">
+                          <div className={`flex items-center gap-1 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                            <MapPin className="h-3 w-3 text-primary" />
                             <span className={isRTL ? 'font-cairo' : 'font-inter'}>
                               {project.location}
                             </span>
                           </div>
                           
-                          <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                            <Calendar className="h-4 w-4 text-primary" />
+                          <div className={`flex items-center gap-1 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                            <Calendar className="h-3 w-3 text-primary" />
                             <span className={isRTL ? 'font-cairo' : 'font-inter'}>
                               {project.date}
                             </span>
@@ -218,8 +218,8 @@ const ProjectGallerySection: React.FC = () => {
               ))}
             </CarouselContent>
             
-            <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white shadow-xl border-0 w-12 h-12" />
-            <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white shadow-xl border-0 w-12 h-12" />
+            <CarouselPrevious className="absolute -left-2 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl border-0 w-10 h-10" />
+            <CarouselNext className="absolute -right-2 top-1/2 -translate-y-1/2 bg-white/95 hover:bg-white shadow-xl border-0 w-10 h-10" />
           </Carousel>
         </div>
 

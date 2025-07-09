@@ -22,9 +22,9 @@ const Index: React.FC = () => {
           <AboutSection />
           <ServicesSection />
           <ProductsSection />
-          <PortfolioSection />
           <ProjectGallerySection />
           <TestimonialsSection />
+          <PortfolioSection />
           <ContactSection />
         </main>
         <Footer />

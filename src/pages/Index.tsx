@@ -7,6 +7,7 @@ import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import ProductsSection from '../components/ProductsSection';
 import PortfolioSection from '../components/PortfolioSection';
+import ProjectGallerySection from '../components/ProjectGallerySection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import ContactSection from '../components/ContactSection';
 import Footer from '../components/Footer';
@@ -22,6 +23,7 @@ const Index: React.FC = () => {
           <ServicesSection />
           <ProductsSection />
           <PortfolioSection />
+          <ProjectGallerySection />
           <TestimonialsSection />
           <ContactSection />
         </main>
